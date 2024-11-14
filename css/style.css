@@ -1,0 +1,143 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #261C14;
+    background-color: E7EAE3;
+}
+
+header {
+    background-color: #734C1D;
+    padding: 15px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #F28705;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #D9C0A3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F28705;
+}
+
+.hero {
+    background-image: url('ktec_layout.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    color: #F28705;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #F27405;
+}
+
+footer {
+    background-color: #734C1D;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animações */
+header nav ul li a:hover {
+    color: #F28705;
+    transform: scale(1.05);
+}
+
+.content h2 {
+    animation: fadeInDown 1s ease;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
